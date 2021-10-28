@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<title>TaskHTML</title>
+
+</head>
+
+<body>
+
+<!-- 
+	Creează o pagină web în care se află centrat un pătrat,
+ care devine cerc atunci când vei pune mouse-ul pe el și își
+ schimbă culoarea, iar tranziția dintre ele să fie treptată.
+-->
+
+<style>
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  position: relative;
+  width: 50vmin;
+  background-color: red;
+  box-sizing: border-box;
+  transition:all .2s ease;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.square:hover {
+	border-radius: 50%;
+	background-color: blue;
+}
+
+</style>
+
+
+
+<div class="container">
+  <div class="square">
+  </div>
+</div>
+
+
+
+
+
+
+</body>
